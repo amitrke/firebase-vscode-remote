@@ -1,0 +1,31 @@
+{
+	"name": "firebase-dev",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "firebase-dev",
+	"workspaceFolder": "/root/workspace",
+
+	"settings": {
+		"eslint.alwaysShowStatus": true,
+		"eslint.format.enable": true,
+		"eslint.lintTask.enable": true	
+	},
+
+	"extensions": [
+		// expo and react native extensions
+		"bycedric.vscode-expo",
+		"msjsdiag.vscode-react-native",
+		"eg2.vscode-npm-script",
+		// ESLint
+		"dbaeumer.vscode-eslint",
+		// git extensions that are highly recommended
+		"eamodio.gitlens",
+		"mhutchie.git-graph",
+		// nice file icons from vscode icons team
+		"vscode-icons-team.vscode-icons"
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [ 19000, 19001, 19002 ],
+}

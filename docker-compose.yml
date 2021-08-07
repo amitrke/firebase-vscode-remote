@@ -1,0 +1,9 @@
+version: '3'
+services:
+  firebase-dev:
+    build: .
+    volumes:
+      - ./app:/root/workspace
+      - vs-server:/root/.vscode-server/extensions
+volumes:
+  vs-server: {}
